@@ -68,6 +68,28 @@ public function sign1(Request $request)
 
 }
 
+public function test3()
+ {	
+	if(isset($_SERVER['HTTP_UID'])){		//检测 变量是否设置
+		//
+	}else{
+		echo "授权失败";
+		die;
+	}
+
+	
+	$uid = $_SERVER['HTTP_UID'];
+	echo "uid:".$uid;echo '</br>';
+
+
+	echo '<pre>';
+		print_r($_SERVER);	// print_r 用来打量变量
+	echo '</pre>';
+
+}
+
+
+public function 
 
 
 
